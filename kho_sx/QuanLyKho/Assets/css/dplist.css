@@ -1,0 +1,77 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+        label {
+            font-weight: bold;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        select:focus {
+            border-color: #28a745;
+        }
+        button[type="submit"], a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover, a.btn:hover {
+            background-color: #218838;
+        }
+        .error-message {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .btn-danger {
+        background-color: #dc3545; /* Màu nền đỏ */
+        border: none; /* Không viền */
+        color: white; /* Màu chữ trắng */
+        padding: 10px 20px; /* Đệm xung quanh nút */
+        text-align: center; /* Căn giữa chữ */
+        text-decoration: none; /* Không gạch chân */
+        display: inline-block; /* Hiển thị nút trên cùng một dòng */
+        font-size: 16px; /* Cỡ chữ */
+        margin: 4px 2px; /* Khoảng cách xung quanh nút */
+        cursor: pointer; /* Con trỏ chuột khi di chuyển qua nút */
+        border-radius: 6px;
+    }

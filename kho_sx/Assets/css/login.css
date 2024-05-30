@@ -1,0 +1,177 @@
+.login-header::after { 
+    content:"";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 var(--primary-color);
+}
+ /* Removed space before --primary-color */
+.input_box {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.input-field {
+width: 100%;
+height: 55px;
+font-size: 16px;
+background-color: rgba(253, 252, 252, 0.9); /* Màu nền của ô input */
+color: var(--second-color);
+padding-inline: 20px 50px;
+border: 2px solid var(--primary-color);
+border-radius: 30px;
+color: #313fdf;
+outline: none;
+}
+#user {
+margin-bottom: 10px;
+}
+.label {
+position: absolute;
+top: 15px;
+left: 20px;
+transition: 0.2s;
+}
+
+.input-field:focus + .label,
+.input-field:valid + .label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: var(--black-color);
+    padding: 0 10px;
+}
+
+.icon {
+position: absolute;
+top: 18px;
+right: 25px;
+font-size: 20px;
+}
+.remember-forgot {
+display: flex;
+justify-content: space-between;
+font-size: 15px;
+}
+.input-submit {
+width: 100%;
+height: 50px;
+background: #d4d6e0;
+font-size: 16px;
+font-weight: 500; border: none;
+border-radius: 30px;
+cursor: pointer;
+transition: 0.3s;
+color: #fbf8f8;
+}
+.input-submit:hover {
+    background: var(--second-color);
+}
+
+
+.register {
+text-align: center;
+}
+.register a {
+font-weight: 500;
+}
+@media only screen and (max-width: 564px) {
+}
+.wrapper {
+    padding: 20px;
+}
+
+.login_box {
+padding: 7.5em 1.5em 4em 1.5em;
+
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+:root {
+--primary-color: #f9f9fb;
+--second-color: #ffffff;
+--black-color: #000000;
+}
+body {
+
+background-image:url("https://th.bing.com/th/id/R.522f14e917d448c38fd0b881cd0bf8c0?rik=%2bOrvgsrsH1a0fA&riu=http%3a%2f%2fddragon.leagueoflegends.com%2fcdn%2fimg%2fchampion%2fsplash%2fYasuo_0.jpg&ehk=4I7x7dScQGL4ElrGSXmoqT3q40wB%2f9QZX67IpgsNGDk%3d&risl=&pid=ImgRaw&r=0");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+a {
+text-decoration: none;
+color: var(--second-color);
+}
+a:hover {
+text-decoration: underline;
+}
+.wrapper {
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login_box {
+position: relative; width: 450px;
+/* backdrop-filter: blur (25px); */
+border: 2px solid var(--primary-color);
+border-radius: 15px;
+padding: 7.5em 2.5em 4em 2.5em;
+color: var(--second-color);
+box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+opacity: 1; /* Thêm đoạn này để làm mờ */
+background-color: rgba(25, 49, 103, 0.8);
+color: #fff;
+}
+
+.login-header {
+position: absolute; top: 0;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--primary-color);
+width: 140px;
+height: 70px;
+border-radius: 0 0 20px 20px;
+}
+.login-header span {
+    font-size: 30px;
+color: var(--black-color);
+}
+.login-header::before {
+content:"";
+position: absolute;
+top: 0;
+}
+
+.login-header::before { content:"";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 var(--primary-color);
+}
